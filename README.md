@@ -22,3 +22,7 @@ Notes:
   * <https://chromedriver.chromium.org/capabilities#h.p_ID_106> - chromedriver options / wdio-chrome interface
   * <https://peter.sh/experiments/chromium-command-line-switches/> - chrome options
   * <https://gist.github.com/kyranet/3331b1346b773e1b03f1da2127f73fd0> - v8 options
+* Debugging
+  * <https://www.chromium.org/for-testers/enable-logging/>
+  * <https://chromium.googlesource.com/chromium/src/+/lkgr/docs/linux/debugging.md#logging> - `--renderer-cmd-prefix` with `tee`, `cat`, `tail`?
+  * <https://www.youtube.com/watch?v=FtoZPhxGOfQ> ???
