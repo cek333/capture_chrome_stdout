@@ -6,7 +6,8 @@ Install a specific version of chromium:
 export NODE_CHROMIUM_REVISION=1036826 // version 106.0.5249.91
 npm install chromium
 ```
-
+Also, <https://chromium.cypress.io/>
+ 
 ```
     userDataDir: path.join(__dirname, 'logs/chrome'),
 ```
@@ -35,4 +36,3 @@ Notes:
 tail -f /proc/<pid>/fd/1  
 1 = stdout, 2 = stderr  
 <https://unix.stackexchange.com/questions/58550/how-to-view-the-output-of-a-running-process-in-another-bash-session>
-
