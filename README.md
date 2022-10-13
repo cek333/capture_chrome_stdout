@@ -7,6 +7,11 @@ export NODE_CHROMIUM_REVISION=1036826 // version 106.0.5249.91
 npm install chromium
 ```
 
+```
+    userDataDir: path.join(__dirname, 'logs/chrome'),
+```
+Will write stdout and stderr output to files.
+
 Notes:
 
 * <https://nodejs.org/api/child_process.html#child_processspawncommand-args-options>
@@ -26,3 +31,8 @@ Notes:
   * <https://www.chromium.org/for-testers/enable-logging/>
   * <https://chromium.googlesource.com/chromium/src/+/lkgr/docs/linux/debugging.md#logging> - `--renderer-cmd-prefix` with `tee`, `cat`, `tail`?
   * <https://www.youtube.com/watch?v=FtoZPhxGOfQ> ???
+
+tail -f /proc/<pid>/fd/1  
+1 = stdout, 2 = stderr  
+<https://unix.stackexchange.com/questions/58550/how-to-view-the-output-of-a-running-process-in-another-bash-session>
+
